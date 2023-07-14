@@ -30,9 +30,7 @@ function App() {
     <div>
       <Header></Header>
       <ul id="concepts">
-        <Concept image={concepts[0].image} title={concepts[0].title} description={concepts[0].description} />
-        <Concept image={concepts[1].image} title={concepts[1].title} description={concepts[1].description} />
-        <Concept image={concepts[2].image} title={concepts[2].title} description={concepts[2].description} />
+        {concepts.map(item => (<Concept image={item.image} title={item.title} description={item.description} />))}
       </ul>
     </div>
   );
